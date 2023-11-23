@@ -53,7 +53,7 @@ nav a {
 }
 
 /* Will come back to this later */
-/* .menu__onclick {
+ .menu__onclick {
     display: none;
     position: absolute;
     top: 0;
@@ -61,8 +61,6 @@ nav a {
     height: 100%;
     background-color: red;
 }
-
-.nav span:s */
 
 /* ........................... */
 
@@ -99,10 +97,6 @@ nav a {
 .hero__texts {
     display: grid;
     gap: 10px;
-}
-
-.hero__details p {
-
 }
 
 .hero__buttons {
