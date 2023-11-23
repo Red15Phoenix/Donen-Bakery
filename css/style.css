@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Dancing+Script&family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+
+:root {
+    --white: #fff;
+    --black: #000;
+    --brown: #9e7a4e;
+    --default-page-padding: 20px;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f4;
+    background: linear-gradient(to right, #f4f4f4, #c8c7c6);
+}
+
+
+/* Header............. */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: none;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+}
+
+nav a {
+    display: none;
+    color: var(--black);
+    text-decoration: none;
+}
+
+/* Will come back to this later */
+/* .menu__onclick {
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+}
+
+.nav span:s */
+
+/* ........................... */
+
+
+/* Hero................. */
+.hero {
+    display: grid;
+    gap: 50px;
+    text-align: center;
+}
+
+.hero__image {
+    background: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    width: 100%;
+    height: 55vh;
+}
+
+.hero__image img {
+    display: none;
+    width: 100%;
+}
+
+.hero__details {
+    display: grid;
+    justify-items: center;
+    gap: 20px;
+    padding: var(--default-page-padding);
+}
+
+.hero__texts {
+    display: grid;
+    gap: 10px;
+}
+
+.hero__details p {
+
+}
+
+.hero__buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.hero__buttons button{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: none;
+    color: var(--black);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adjust the values as needed */
+  cursor: pointer;
+  transition: box-shadow 0.3s ease-in-out; /* Add a smooth transition effect */
+}
+
+.hero__buttons button:hover {
+    color: var(--white);
+    background-color: var(--black);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Adjust the values for the hover effect */
+  }
+
+.explore {
+    color: var(--white);
+    background-color: var(--brown);
+}
+
+.order {
+ 
+    background-color: var(--white);
+}
+
+/* ....................................... */
