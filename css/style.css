@@ -23,6 +23,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     background-color: #f4f4f4;
     background: linear-gradient(to right, #f4f4f4, #c8c7c6);
+    
 }
 
 
@@ -114,24 +115,36 @@ nav a {
     color: var(--black);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adjust the values as needed */
-  cursor: pointer;
-  transition: box-shadow 0.3s ease-in-out; /* Add a smooth transition effect */
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-in-out; /* Add a smooth transition effect */
 }
-
-.hero__buttons button:hover {
-    color: var(--white);
-    background-color: var(--black);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Adjust the values for the hover effect */
-  }
-
 .explore {
     color: var(--white);
     background-color: var(--brown);
 }
 
+.explore:hover {
+    color: var(--white);
+    background-color: var(--black);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Adjust the values for the hover effect */
+}
+
 .order {
- 
     background-color: var(--white);
 }
 
+.order:hover{
+    color: var(--white);
+    background-color: var(--black);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Adjust the values for the hover effect */
+}
+
 /* ....................................... */
+
+/* MENUS........................ */
+
+.menus {
+    display: grid;
+    gap: 50px;
+    text-align: center;
+}
