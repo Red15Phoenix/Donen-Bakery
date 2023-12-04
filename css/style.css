@@ -19,11 +19,21 @@
 }
 
 body {
+    display: grid;
+    gap: 20px;
     min-height: 100vh;
     font-family: 'Montserrat', sans-serif;
     background-color: #f4f4f4;
     background: linear-gradient(to right, #f4f4f4, #c8c7c6);
     
+}
+
+
+/* Hero................. */
+.hero {
+    display: grid;
+    gap: 50px;
+    text-align: center;
 }
 
 
@@ -65,16 +75,6 @@ nav a {
 
 /* ........................... */
 
-
-/* Hero................. */
-.hero {
-    min-height: 100vh;
-    min-height: 100svh;
-    display: grid;
-    gap: 40px;
-    text-align: center;
-}
-
 .hero__image {
     background: url(../images/bg.jpg);
     background-repeat: no-repeat;
@@ -82,7 +82,7 @@ nav a {
     background-position: center;
     background-blend-mode: overlay;
     width: 100%;
-    height: 55vh;
+    height: 50vh;
 }
 
 .hero__image img {
@@ -112,7 +112,7 @@ nav a {
     gap: 5px;
     justify-content: center;
     align-items: center;
-    padding: 0px 10px;
+    padding: 10px;
     border: none;
     color: var(--black);
     border-radius: 10px;
@@ -149,4 +149,24 @@ nav a {
     display: grid;
     gap: 50px;
     text-align: center;
+    padding: 40px;
+}
+
+.menu__items {
+    display: grid;
+    gap: 30px;
+}
+.servings {
+    border-radius: 20px;
+    width: 100%;
+    height: 300px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Adjust the values for the hover effect */
+
+}
+
+.servings img{
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
