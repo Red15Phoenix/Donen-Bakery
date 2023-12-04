@@ -19,6 +19,7 @@
 }
 
 body {
+    min-height: 100svh;
     min-height: 100vh;
     font-family: 'Montserrat', sans-serif;
     background-color: #f4f4f4;
