@@ -68,8 +68,10 @@ nav a {
 
 /* Hero................. */
 .hero {
+    min-height: 100svh;
+    min-height: 100vh;
     display: grid;
-    gap: 50px;
+    gap: 30px;
     text-align: center;
 }
 
@@ -110,7 +112,7 @@ nav a {
     gap: 5px;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 0px 10px;
     border: none;
     color: var(--black);
     border-radius: 10px;
