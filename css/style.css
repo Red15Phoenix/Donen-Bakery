@@ -19,13 +19,11 @@
 }
 
 body {
-    display: grid;
-    gap: 50px;
     min-height: 100vh;
     font-family: 'Montserrat', sans-serif;
     background-color: #f4f4f4;
     background: linear-gradient(to right, #f4f4f4, #c8c7c6);
-    
+
 }
 
 
@@ -64,7 +62,7 @@ nav a {
 }
 
 /* Will come back to this later */
- .menu__onclick {
+.menu__onclick {
     display: none;
     position: absolute;
     top: 0;
@@ -107,7 +105,7 @@ nav a {
     gap: 20px;
 }
 
-.hero__buttons button{
+.hero__buttons button {
     display: flex;
     gap: 5px;
     justify-content: center;
@@ -116,10 +114,13 @@ nav a {
     border: none;
     color: var(--black);
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adjust the values as needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Adjust the values as needed */
     cursor: pointer;
-    transition: box-shadow 0.3s ease-in-out; /* Add a smooth transition effect */
+    transition: box-shadow 0.3s ease-in-out;
+    /* Add a smooth transition effect */
 }
+
 .explore {
     color: var(--white);
     background-color: var(--brown);
@@ -128,70 +129,106 @@ nav a {
 .explore:hover {
     color: var(--white);
     background-color: var(--black);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Adjust the values for the hover effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    /* Adjust the values for the hover effect */
 }
 
 .order {
     background-color: var(--white);
 }
 
-.order:hover{
+.order:hover {
     color: var(--white);
     background-color: var(--black);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Adjust the values for the hover effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    /* Adjust the values for the hover effect */
 }
 
 /* ....................................... */
 
-/* MENUS........................ */
+.container {
+    display: grid;
+    gap: 50px;
+    margin-top: 50px;
+    background-color: var(--white);
+}
 
-.menus {
+/* WHY YOU SHOULD CHOOSE US aka Lorem, currently hungry so i can't come up with something else lol */
+
+
+.lorem {
+    display: grid;
+    grid-template-columns: repeat(1,auto);
+    gap: 30px;
+    padding: 40px;
+    background-color: var(--brown);
+}
+
+.lorem__details {
+    display: grid;
+    gap: 10px;
+    color: var(--white);
+}
+
+.lorem__details h3 {
+    color: var(--black);
+}
+/* ............................. */
+
+/* BAKERIES........................ */
+
+.bakeries {
     display: grid;
     gap: 50px;
     text-align: center;
+    padding: 30px;
+    background-color: var(--white);
 }
 
-.menu__header{
-    padding: 20px 40px;
+.bakeries__examples {
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    gap: inherit;
+}
+
+.bakeries__header h2{
+   line-height: 35px;
     /* border-bottom: 2px solid var(--black);
     border-top: 2px solid var(--black); */
+}
+
+.bakery__item {
+    border-radius: 10px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-.menu__items {
-    display: grid;
-    gap: 30px;
-    padding: 40px;
-}
-
-.servings {
-    border-radius: 20px;
+.bakery__image {
+    border-radius: inherit;
     width: 100%;
-    height: 300px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Adjust the values for the hover effect */
-
+    height: 100%;
 }
 
-.servings img{
+.bakery__image img {
     border-radius: inherit;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
+
 /* .................................. */
 
 /* ABOUT US....................... */
 
-.aboutUs {
+ .aboutUs {
     display: grid;
     gap: 10px;
-    text-align: center;
-    padding: var(--default-page-padding);
+    text-align: left;
+    padding: 30px;
     background-color: var(--brown);
     color: var(--white);
 }
 
 .aboutUs p{
-    line-height: 30px;
+    line-height: 25px;
 }
